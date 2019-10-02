@@ -19,6 +19,8 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2019_
 
 2. Run your quality score plotting script from your Demultiplexing assignment from Bi 622. Describe how the ```FastQC``` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? If so, why?
 
+3. Comment on the overall data quality of your two libraries.
+
 ### Part 2 – Adaptor trimming comparison
 
 3. Look into the adaptor trimming options for ```cutadapt``` and ```Trimmomatic``` (all on Talapas), and briefly describe the differences. Pick one of these programs to properly trim adapter sequences. Use default settings. What proportion of reads (both forward and reverse) was trimmed? 
