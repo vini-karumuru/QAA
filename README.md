@@ -24,14 +24,12 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2019_
 ### Part 2 – Adaptor trimming comparison
 
 4. Look into the adaptor trimming options for ```cutadapt``` and ```Trimmomatic``` (all on Talapas), and briefly describe the differences. Pick one of these programs to properly trim adapter sequences. Use default settings. What proportion of reads (both forward and reverse) was trimmed? 
-    - *Sanity check*: Use your Unix skills to search for the adapter sequences in your datasets and confirm the expected sequence orientations. Report the commands you used, the reasoning behind them, and how they confirmed the adapter sequences.
+    - *Sanity check*: Use your Unix skills to search for the adapter sequences in your datasets and confirm the expected sequence orientations. You may want to refer to Graded Assignment 4 from Bi623. Report the commands you used, the reasoning behind them, and how you confirmed the adapter sequences.
   
-5. Plot the trimmed read length distributions for both forward and reverse reads (on the same plot). If necessary, consult Assignment 5 (Block 1) from Bi 623 to refresh your memory.
+5. Plot the trimmed read length distributions for both forward and reverse reads (on the same plot). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates. 
 
-6. Briefly describe whether the adaptor trimming results are consistent with the insert size distributions for your libraries. The size distribution information is in the Fragment Analyzer trace file on Github.
-  
 ### Part 3 – rRNA reads and strand-specificity
-7. Find publicly available mouse rRNA sequences and generate a gsnap database from them. Align the reads to your mouse rRNA database and report the proportion of reads that likely came from rRNAs.
+7. Find publicly available Drosophila melanogaster rRNA sequences and generate an alignment database (e.g. STAR) from them. Align the reads to your fly rRNA database (e.g. STAR) and report the proportion of reads that likely came from rRNAs. Think about what resources may be available for finding your fly rRNAs. We've talked about a few potential dbs over the summer. You might also check out Rfam.
 
 8. Demonstrate convincingly whether or not the data are from “strand-specific” RNA-Seq libraries. There are a few possible strategies to address this problem, but you need only implement one. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
 
