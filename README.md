@@ -1,7 +1,5 @@
-# Bi 624 (Fall 2019) – Problem Set 1
+# Bi 623 (Summer 2020)
 ## RNA-seq Quality Assessment Assignment
-
-This assignment is due Thursday, Oct 10 by 11:59 PM.
 
 Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions can be submitted as ```html```, Github markdown, or ```pdf```.
 
