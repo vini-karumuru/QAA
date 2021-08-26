@@ -57,8 +57,7 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
 
     Then ```pip install HTSeq```
 
-
-8. Find publicly available mouse genome fasta files (we've discussed a few potential dbs over the summer) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
+8. Find publicly available mouse genome fasta files (Ensemble release 104) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
 
     *Hint* - you will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
 
@@ -69,4 +68,4 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
     *Hint* - recall ICA4 from Bi621.
 
 **To turn in your work for this assignment**:
-Please upload your Talapas batch script/code, FastQC plots, counts files generated from htseq-count, answers to questions, and any additional plots/code to github. You should create at most 2 files for submission (R markdown and the rendered pdf file) containing all these elements. The three parts of the assignment should be clearly labeled. Be sure to title and write a figure legend for each image/graph/table you present.
+Upload your Talapas batch script/code, FastQC plots, counts files generated from htseq-count, answers to questions, and any additional plots/code to github. You should create at most 2 files for submission (R markdown and the rendered pdf file) containing all these elements. The three parts of the assignment should be clearly labeled. Be sure to title and write a figure legend for each image/graph/table you present.
