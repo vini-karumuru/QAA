@@ -10,7 +10,9 @@ Each of you will be working with 2 of the demultiplexed file pairs. For all step
 
 The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_sequencing/demultiplexed/```
 
-### Part 1 – Read quality score distributions
+## Do not move, copy, or unzip these data!
+
+# Part 1 – Read quality score distributions
 
 1. Using ```FastQC``` via the command line on Talapas, produce plots of quality score distributions for R1 and R2 reads. Also, produce plots of the per-base N content, and comment on whether or not they are consistent with the quality score plots.
 
@@ -18,17 +20,53 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
 
 3. Comment on the overall data quality of your two libraries.
 
-### Part 2 – Adaptor trimming comparison
+# Part 2 – Adaptor trimming comparison
 
-4. Look into the adaptor trimming options for ```cutadapt``` and ```Trimmomatic``` (all on Talapas), and briefly describe the differences. Pick one of these programs to properly trim adapter sequences. Use default settings. What proportion of reads (both forward and reverse) was trimmed? 
-    - *Sanity check*: Use your Unix skills to search for the adapter sequences in your datasets and confirm the expected sequence orientations. You may want to refer to Assignment 4 from Bi623. Report the commands you used, the reasoning behind them, and how you confirmed the adapter sequences.
+4. Create a new conda environment called ```QAA``` and install ```cutadapt``` and ```Trimmomatic```. Google around if you need a refresher on how to create conda environments. Make sure you check your installations with:
+    - ```cutadapt --version``` (should be 3.4)
+    -  ```trimmomatic -version``` (should be 0.39)
+
+5. Using ```cutadapt```, properly trim adapter sequences from your assigned files. Be sure to read how to use ```cutadapt```. Use default settings. What proportion of reads (both forward and reverse) were trimmed?
+
+    <details>
+    <summary>Try to determine what the adapters are on your own. If you cannot (or if you do, and want to confirm), click here to see the actual adapter sequences used.</summary>
   
-5. Plot the trimmed read length distributions for both forward and reverse reads (on the same plot). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates. 
+    R1: ```AGATCGGAAGAGCACACGTCTGAACTCCAGTCA```
+    
+    R2: ```AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT```
+    </details>
 
-### Part 3 – rRNA reads and strand-specificity
-6. Find publicly available mouse rRNA sequences and generate an alignment database (e.g. STAR) from them. Align the reads to your mouse rRNA database (e.g. STAR) and report the proportion of reads that likely came from rRNAs. Think about what resources may be available for finding your mouse rRNAs. We've talked about a few potential dbs over the summer. You might also check out Rfam.
+    - *Sanity check*: Use your Unix skills to search for the adapter sequences in your datasets and confirm the expected sequence orientations. Report the commands you used, the reasoning behind them, and how you confirmed the adapter sequences.
 
-7. Demonstrate convincingly whether or not the data are from “strand-specific” RNA-Seq libraries. There are a few possible strategies to address this problem, but you need only implement one. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
+6. Use ```Trimmomatic``` to quality trim your reads. Specify the following, in this order:
+    - LEADING: quality of 3
+    - TRALING: quality of 3
+    - SLIDING WINDOW: window size of 5 and required quality of 15
+    - MINLENGTH: 35 bases
+
+    Be sure to output compressed files and clear out any intermediate files.
+
+7. Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates. 
+
+# Part 3 – Alignment and strand-specificity
+8. Install sofware. In your QAA environment, use conda to install:
+    - star
+    - numpy
+    - pysam
+    - matplotlib
+
+    Then ```pip install HTSeq```
+
+
+8. Find publicly available mouse genome fasta files (we've discussed a few potential dbs over the summer) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
+
+    *Hint* - you will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
+
+9. Count reads that map to features using htseq-count. You should run htseq-count twice: once with ```--stranded=yes``` and again with ```--stranded=no```. Use default parameters otherwise.
+
+10. Demonstrate convincingly whether or not the data are from “strand-specific” RNA-Seq libraries. Include any comands/scripts used. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
+
+    *Hint* - recall ICA4 from Bi621.
 
 **To turn in your work for this assignment**:
-Please upload your Talapas batch script/code, FastQC plots, answers to questions, and any additional plots/code to github. You should create at most 2 files for submission (R markdown and the rendered pdf file) containing all these elements. The three parts of the assignment should be clearly labeled. Be sure to title and write a figure legend for each image/graph/table you present.
+Please upload your Talapas batch script/code, FastQC plots, counts files generated from htseq-count, answers to questions, and any additional plots/code to github. You should create at most 2 files for submission (R markdown and the rendered pdf file) containing all these elements. The three parts of the assignment should be clearly labeled. Be sure to title and write a figure legend for each image/graph/table you present.

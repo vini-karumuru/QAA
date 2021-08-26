@@ -102,3 +102,17 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+#fasta/q files
+.fastq
+.fq
+.fastq.gz
+.fq.gz
+.fasta
+.fa
+.fasta.gz
+.fa.gz
+
+#alignment files
+.sam
+.bam
