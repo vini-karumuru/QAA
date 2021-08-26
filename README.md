@@ -40,7 +40,7 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
 
 6. Use ```Trimmomatic``` to quality trim your reads. Specify the following, in this order:
     - LEADING: quality of 3
-    - TRALING: quality of 3
+    - TRAILING: quality of 3
     - SLIDING WINDOW: window size of 5 and required quality of 15
     - MINLENGTH: 35 bases
 
