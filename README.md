@@ -61,7 +61,7 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
 
     *Hint* - you will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
     
-9. Using your script from PS8 in Bi621, report the number of mapped and unmapped reads from each of your 2 sam files. Be sure to fix your script if you original used qnames to count.
+9. Using your script from PS8 in Bi621, report the number of mapped and unmapped reads from each of your 2 sam files. Make sure that your script is looking at the bitwise flag to determine if reads are primary or secondary mapping (update your script if necessary).
 
 10. Count reads that map to features using htseq-count. You should run htseq-count twice: once with ```--stranded=yes``` and again with ```--stranded=no```. Use default parameters otherwise.
 
