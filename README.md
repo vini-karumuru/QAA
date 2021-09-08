@@ -69,18 +69,19 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
 
     *Hint* - recall ICA4 from Bi621.
 
-**To turn in your work for this assignment**:
+## To turn in your work for this assignment
+
 Upload your:
-    - Talapas batch script/code, 
-    - FastQC plots, 
-    - mapped/unmapped read counts, 
-    - counts files generated from htseq-count (in a folder would be nice), 
-    - answers to questions, 
-    - and any additional plots/code to github. 
+- Talapas batch script/code, 
+- FastQC plots, 
+- mapped/unmapped read counts, 
+- counts files generated from htseq-count (in a folder would be nice), 
+- answers to questions, 
+- and any additional plots/code to github. 
     
 You should create a pdf file with a high-level report including:
-    - all plots
-    - answers to questions
-    - read counts (in a nicely formatted table)
+- all plots
+- answers to questions
+- read counts (in a nicely formatted table)
     
 The three parts of the assignment should be clearly labeled. Be sure to title and write a figure legend for each image/graph/table you present.
