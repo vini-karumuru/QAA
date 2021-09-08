@@ -63,11 +63,24 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
     
 9. Using your script from PS8 in Bi621, report the number of mapped and unmapped reads from each of your 2 sam files. Make sure that your script is looking at the bitwise flag to determine if reads are primary or secondary mapping (update your script if necessary).
 
-10. Count reads that map to features using htseq-count. You should run htseq-count twice: once with ```--stranded=yes``` and again with ```--stranded=no```. Use default parameters otherwise.
+10. Count reads that map to features using htseq-count. You should run htseq-count twice: once with ```--stranded=yes``` and again with ```--stranded=reverse```. Use default parameters otherwise.
 
 11. Demonstrate convincingly whether or not the data are from “strand-specific” RNA-Seq libraries. Include any comands/scripts used. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
 
     *Hint* - recall ICA4 from Bi621.
 
 **To turn in your work for this assignment**:
-Upload your Talapas batch script/code, FastQC plots, mapped/unmapped read counts, counts files generated from htseq-count, answers to questions, and any additional plots/code to github. You should create at most 2 files for submission (R markdown and the rendered pdf file) containing all these elements. The three parts of the assignment should be clearly labeled. Be sure to title and write a figure legend for each image/graph/table you present.
+Upload your:
+    - Talapas batch script/code, 
+    - FastQC plots, 
+    - mapped/unmapped read counts, 
+    - counts files generated from htseq-count (in a folder would be nice), 
+    - answers to questions, 
+    - and any additional plots/code to github. 
+    
+You should create a pdf file with a high-level report including:
+    - all plots
+    - answers to questions
+    - read counts (in a nicely formatted table)
+    
+The three parts of the assignment should be clearly labeled. Be sure to title and write a figure legend for each image/graph/table you present.
