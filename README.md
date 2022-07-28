@@ -1,4 +1,4 @@
-# RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2021)
+# RNA-seq Quality Assessment Assignment - Bi 622 (Summer 2022)
 
 Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions can be submitted as Github markdown or ```pdf```.
 
@@ -6,23 +6,44 @@ Be sure to upload all relevant materials by the deadline and **double check** to
 The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set.
 
 ### Data: 
-Each of you will be working with 2 of the demultiplexed file pairs. For all steps below, process the two libraries separately. Library assignments are here: ```/projects/bgmp/shared/Bi623/QAA_data_assignments.txt```
+Each of you will be working with 2 of the demultiplexed file pairs. For all steps below, process the two libraries separately. Library assignments are here: ```/projects/bgmp/shared/Bi622/QAA_data_assignments.txt```
 
 The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_sequencing/demultiplexed/```
 
-## Do not move, copy, or unzip these data!
+### Do not move, copy, or unzip these data!
+
+```
+______                    _                                                               
+|  _  \                  | |                                                              
+| | | |___    _ __   ___ | |_   _ __ ___   _____   _____      ___ ___  _ __  _   _        
+| | | / _ \  | '_ \ / _ \| __| | '_ ` _ \ / _ \ \ / / _ \    / __/ _ \| '_ \| | | |       
+| |/ / (_) | | | | | (_) | |_  | | | | | | (_) \ V /  __/_  | (_| (_) | |_) | |_| |_      
+|___/ \___/  |_| |_|\___/ \__| |_| |_| |_|\___/ \_/ \___( )  \___\___/| .__/ \__, ( )     
+                                                        |/            | |     __/ |/      
+                                                                      |_|    |___/        
+                              _         _   _                          _       _        _ 
+                             (_)       | | | |                        | |     | |      | |
+  ___  _ __   _   _ _ __  _____ _ __   | |_| |__   ___  ___  ___    __| | __ _| |_ __ _| |
+ / _ \| '__| | | | | '_ \|_  / | '_ \  | __| '_ \ / _ \/ __|/ _ \  / _` |/ _` | __/ _` | |
+| (_) | |    | |_| | | | |/ /| | |_) | | |_| | | |  __/\__ \  __/ | (_| | (_| | || (_| |_|
+ \___/|_|     \__,_|_| |_/___|_| .__/   \__|_| |_|\___||___/\___|  \__,_|\__,_|\__\__,_(_)
+                               | |                                                        
+                               |_|                                                        
+```
+
+### Do not move, copy, or unzip these data!
 
 # Part 1 – Read quality score distributions
 
 1. Using ```FastQC``` via the command line on Talapas, produce plots of quality score distributions for R1 and R2 reads. Also, produce plots of the per-base N content, and comment on whether or not they are consistent with the quality score plots.
 
-2. Run your quality score plotting script from your Demultiplexing assignment from Bi622. Describe how the ```FastQC``` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? If so, why?
+2. Run your quality score plotting script from your Demultiplexing assignment. (Make sure you're using the "running sum" strategy!!) Describe how the ```FastQC``` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? If so, why?
 
 3. Comment on the overall data quality of your two libraries.
 
 # Part 2 – Adaptor trimming comparison
 
-4. Create a new conda environment called ```QAA``` and install ```cutadapt``` and ```Trimmomatic```. Google around if you need a refresher on how to create conda environments. Make sure you check your installations with:
+4. Create a new conda environment called ```QAA``` and install ```cutadapt``` and ```Trimmomatic```. Google around if you need a refresher on how to create conda environments. Recommend doing this in an interactive session, not the login node! Make sure you check your installations with:
     - ```cutadapt --version``` (should be 3.4)
     -  ```trimmomatic -version``` (should be 0.39)
 
@@ -57,7 +78,7 @@ The demultiplexed, gzipped .fastq files are here: ```/projects/bgmp/shared/2017_
 
     Then ```pip install HTSeq```
 
-8. Find publicly available mouse genome fasta files (Ensemble release 104) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
+8. Find publicly available mouse genome fasta files (Ensemble release 107) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
 
     *Hint* - you will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
     
