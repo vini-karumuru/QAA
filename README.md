@@ -1,6 +1,6 @@
 # RNA-seq Quality Assessment Assignment - Bi 622 (Summer 2022)
 
-Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions can be submitted as Github markdown or ```pdf```.
+Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions should be submitted in your final report as a `pdf`.
 
 ## Objectives
 The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set.
