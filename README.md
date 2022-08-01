@@ -75,7 +75,7 @@ ______                    _
     - numpy
     - pysam
     - matplotlib
-    - htSeq
+    - htseq
 
 8. Find publicly available mouse genome fasta files (Ensemble release 107) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
 
