@@ -47,7 +47,7 @@ ______                    _
     - ```cutadapt --version``` (should be 4.1)
     -  ```trimmomatic -version``` (should be 0.39)
 
-5. Using ```cutadapt```, properly trim adapter sequences from your assigned files. Be sure to read how to use ```cutadapt```. Use default settings. What proportion of reads (both forward and reverse) were trimmed?
+5. Using ```cutadapt```, properly trim adapter sequences from your assigned files. Be sure to read how to use ```cutadapt```. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
 
     <details>
     <summary>Try to determine what the adapters are on your own. If you cannot (or if you do, and want to confirm), click here to see the actual adapter sequences used.</summary>
