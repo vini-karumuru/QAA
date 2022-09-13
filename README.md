@@ -1,6 +1,6 @@
-# RNA-seq Quality Assessment Assignment - Bi 622 (Summer 2022)
+# RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2022)
 
-Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions should be submitted in your final report as a `pdf`.
+Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions should be included in your final, high-level, report as a `pdf`. This pdf should be generated using Rmarkdown.
 
 ## Objectives
 The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set.
@@ -35,11 +35,11 @@ ______                    _
 
 # Part 1 – Read quality score distributions
 
-1. Using ```FastQC``` via the command line on Talapas, produce plots of quality score distributions for R1 and R2 reads. Also, produce plots of the per-base N content, and comment on whether or not they are consistent with the quality score plots.
+1. Using ```FastQC``` via the command line on Talapas, produce plots of the per-base quality score distributions for R1 and R2 reads. Also, produce plots of the per-base N content, and comment on whether or not they are consistent with the quality score plots.
 
 2. Run your quality score plotting script from your Demultiplexing assignment. (Make sure you're using the "running sum" strategy!!) Describe how the ```FastQC``` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? If so, why?
 
-3. Comment on the overall data quality of your two libraries.
+3. Comment on the overall data quality of your two libraries. Go beyond per-base qscore distributions. Make and justify a recommendation on whether or these data are of high enough quality to use for further analysis.
 
 # Part 2 – Adaptor trimming comparison
 
