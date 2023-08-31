@@ -10,8 +10,8 @@ Each of you will be working with 2 of the demultiplexed file pairs. For all step
 
 The demultiplexed, gzipped `.fastq` files are here: ```/projects/bgmp/shared/2017_sequencing/demultiplexed/```
 
-### Do not move, copy, or unzip these data!
-
+> [!WARNING]
+> Do not move, copy, or unzip these data!
 ```
 ______                    _                                                               
 |  _  \                  | |                                                              
@@ -30,8 +30,8 @@ ______                    _
                                | |                                                        
                                |_|                                                        
 ```
-
-### Do not move, copy, or unzip these data!
+> [!WARNING]
+> Do not move, copy, or unzip these data!
 
 # Part 1 – Read quality score distributions
 
@@ -79,7 +79,8 @@ ______                    _
 
 8. Find publicly available mouse genome fasta files (Ensemble release 110) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
 
-    *Hint* - you will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
+  > [!IMPORTANT]
+  > You will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
     
 9. Using your script from PS8 in Bi621, report the number of mapped and unmapped reads from each of your 2 sam files. Make sure that your script is looking at the bitwise flag to determine if reads are primary or secondary mapping (update/fix your script if necessary).
 
@@ -87,8 +88,8 @@ ______                    _
 
 11. Demonstrate convincingly whether or not the data are from "strand-specific" RNA-Seq libraries. Include any comands/scripts used. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
 
-> [!NOTE]
-> Recall ICA4 from Bi621.
+  > [!NOTE]
+  > Recall ICA4 from Bi621.
 
 ## To turn in your work for this assignment
 
