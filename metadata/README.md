@@ -26,7 +26,7 @@ RNA was isolated by a collaborating lab from mouse embryonic fibroblasts treated
 
 The 24 samples were paired randomly such that no pair had the same biological or technical replicate. Quantity of input mRNA was assessed using the Qubit RNA assay. Each pair of samples processed through library preparation by a different individual to decrease batch effect. Libraries were prepared using KAPA’s Stranded mRNA-Seq kit, following an in-house laboratory protocol adapted by the Genomics and Cell Characterization Core Facility at the University of Oregon. We selected for 300-400 bp cDNA fragments. Dual-indexed adapters were used for each library (Table 1).
 
-### Table 1: Library treatments and indicies
+### Table 1: Library treatments and indices
 
 Library | Group | Treatment | Index | Index sequence
 :---:|:---:|---|:---:|---
