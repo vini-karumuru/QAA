@@ -10,7 +10,7 @@ Often with increased speed comes decreased sensitivity. Largely, Illumina’s NG
 
 | ![Overview of Multiplexing and Index Hopping](image.png) |
 |--| 
-| **Figure 1: Overview of Multiplexing and Index Hopping** – Schematic showing the effect of hopped indexes on alignment of reads. **A.** Typical multiplexed Illumina library preparation method using indexes to identify and pool different samples. **B.** During computational demultiplexing of data, reads are sorted into their proper sample "bins" using the associated index. **C.** Index hopping can cause samples to be mis-assigned and interfere with downstream analysis. <br /><br /> Image adapted from [^3]. |
+| **Figure 1: Overview of Multiplexing and Index Hopping** – Schematic showing the effect of hopped indexes on alignment of reads. <br /><br /> **A.** Typical multiplexed Illumina library preparation method using indexes to identify and pool different samples. **B.** During computational demultiplexing of data, reads are sorted into their proper sample "bins" using the associated index. **C.** Index hopping can cause samples to be mis-assigned and interfere with downstream analysis. <br /><br /> Image adapted from [^3]. |
 
 High-throughput sequencing on Illumina instruments has allowed for sequencing of many samples in one flow cell lane through a process called 'multiplexing' (Fig 1A). The multiplexing of samples decreases the cost per run and can allow for the combination of well-controlled, distinct sequencing experiments in the same sequencing run. Samples are differentiated by unique molecular indexes that allow for 'demultiplexing' of the generated reads by sample (Fig 1B).
 
