@@ -1,6 +1,6 @@
 # RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2023)
 
-Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions should be included in your final, high-level, report as a `pdf`. This pdf should be generated using Rmarkdown. Be sure to keep a well-organized, detailed lab notebook!
+Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions should be included in your final, high-level, report as a `pdf`. This pdf should be generated using Rmarkdown and submitted to Canvas. Be sure to keep a well-organized, detailed lab notebook!
 
 ## Objectives
 The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set in a high-level report. That is, you should create a cohesive, [well written](https://canvas.uoregon.edu/courses/223661/modules/618522) report for your "PI" about what you've learned about/from your data.
@@ -87,7 +87,8 @@ ______                    _
 
 11. Demonstrate convincingly whether or not the data are from "strand-specific" RNA-Seq libraries. Include any comands/scripts used. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
 
-    *Hint* - recall ICA4 from Bi621.
+> [!NOTE]
+> Recall ICA4 from Bi621.
 
 ## To turn in your work for this assignment
 
@@ -107,4 +108,4 @@ to GitHub.
 - answers to questions
 - read counts (in a nicely formatted table)
     
-The three parts of the assignment should be clearly labeled. Be sure to title and write a descriptive figure caption for each image/graph/table you present (*Hint* - think about figure captions you've read and discussed in Journal Club). The file should be named `QAA_report.pdf`, and it should be a the top level of your repo.
+The three parts of the assignment should be clearly labeled. Be sure to title and write a descriptive figure caption for each image/graph/table you present (*Hint* - think about figure captions you've read and discussed in Journal Club). The file should be named `QAA_report.pdf`, and it should be a the top level of your repo and submitted to Canvas.
