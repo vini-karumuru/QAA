@@ -4,7 +4,7 @@ Contributors: 2017 BGMP Cohort
 
 ## Motivation
 
-Sequencing of DNA and RNA using next-generation sequencing (NGS) technology has allowed for rapid advances in the biological sciences, and is driving parallel advancements in computational tools for processing genomic data. When Illumina centered itself in the market by acquiring Solexa and its Genome Analyzer, it became apparent that the race for the fastest and highest-throughput sequencing technology was on. [^1]
+Sequencing of DNA and RNA using next-generation sequencing (NGS) technology has allowed for rapid advances in the biological sciences, and is driving parallel advancements in computational tools for processing genomic data. When Illumina centered itself in the market by acquiring Solexa and its Genome Analyzer, it became apparent that the race for the fastest and highest-throughput sequencing technology was on.[^1]
 
 Often with increased speed comes decreased sensitivity. Largely, Illumina’s NGS technology has been able to maintain high sensitivity by performing 'bridge amplification' of DNA fragments prior to sequencing, producing clusters of millions of DNA molecules. Molecules in these clusters can be sequenced with a base call accuracy greater than 95%.
 
@@ -57,10 +57,8 @@ Library | Group | Treatment | Index | Index sequence
 
 All libraries were quality assessed on the Advanced Analytical Fragment Analyzer, and final library quantitation was performed via qPCR with 3 replicates per library. Final library concentrations were then size-adjusted and all libraries were normalized into one pool. This single pool was sequenced on one lane of a 2 x 101 run on an Illumina HiSeq 4000. Libraries 11, 17, 19, 28, 29 (Table 1) were included for sequencing because they contained significant adapter and adapter dimer peaks, as suggested by the [Fragment Analyzer trace](2017_frag_analy.pdf).
 
-[^1] Rae, CK. The year of sequencing: in 2007, the next-generation sequencing technologies have come into their own with an impressive array of successful applications. *Nature Methods* 5, 11-14 (2008).
+[^1]: Rae, CK. The year of sequencing: in 2007, the next-generation sequencing technologies have come into their own with an impressive array of successful applications. *Nature Methods* 5, 11-14 (2008).
 
-[^2] Sinha R, Stanley G, Gulati GS, Ezran C, Travaglini K, *et al*. Index switching causes “spread-of-signal” among multiplexed samples in Illumina HiSeq 4000 DNA sequencing. bioRxiv doi: http://dx.doi.org/10.1101/125724 (2017).
+[^2]: Sinha R, Stanley G, Gulati GS, Ezran C, Travaglini K, *et al*. Index switching causes “spread-of-signal” among multiplexed samples in Illumina HiSeq 4000 DNA sequencing. bioRxiv doi: http://dx.doi.org/10.1101/125724 (2017).
 
-[^3] Effects of Index Misassignment on Multiplexing and
-Downstream Analysis. Illumina. 2017. Accessed
-October 2017.
+[^3]: Effects of Index Misassignment on Multiplexing and Downstream Analysis. Illumina. 2017. Accessed October 2017.
