@@ -43,9 +43,9 @@ ______                    _
 
 # Part 2 – Adaptor trimming comparison
 
-4. Create a new conda environment called ```QAA``` and install the most recent versions of ```cutadapt``` and ```Trimmomatic```. Google around if you need a refresher on how to create conda environments. Recommend doing this in an interactive session, not the login node! Record details of how you created this environment in your lab notebook! Make sure you check your installations with:
+4. Create a new conda environment called ```QAA``` and install ```cutadapt``` and ```Trimmomatic```. Google around if you need a refresher on how to create conda environments. Recommend doing this in an interactive session, not the login node! Record details of how you created this environment in your lab notebook! Make sure you check your installations with:
     - ```cutadapt --version``` (should be 4.4)
-    -  ```trimmomatic -version``` (should be 0.40)
+    -  ```trimmomatic -version``` (should be 0.39)
 
 5. Using ```cutadapt```, properly trim adapter sequences from your assigned files. Be sure to read how to use ```cutadapt```. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
 
