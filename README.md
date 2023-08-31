@@ -91,9 +91,13 @@ ______                    _
   > [!NOTE]
   > Recall ICA4 from Bi621.
 
-## To turn in your work for this assignment
+# Challenge (optional!)
 
-### Upload your:
+Review the [metadata](./metadata) available to you and see if this information leads to any additional insight of your analysis.
+
+# To turn in your work for this assignment
+
+## Upload your:
 - lab notebook,
 - Talapas batch script/code, 
 - FastQC plots, 
@@ -104,7 +108,7 @@ ______                    _
 
 to GitHub.
     
-### You should create a pdf file (using Rmarkdown) with a high-level report including:
+## You should create a pdf file (using Rmarkdown) with a high-level report including:
 - all plots
 - answers to questions
 - read counts (in a nicely formatted table)
