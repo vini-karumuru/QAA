@@ -73,7 +73,6 @@ ______                    _
 8. Install sofware (record details in lab notebook!!!). In your QAA environment, use conda to install:
     - star
     - numpy
-    - pysam
     - matplotlib
     - htseq
 
