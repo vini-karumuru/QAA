@@ -97,7 +97,7 @@ Review the [metadata](./metadata) available to you and see if this information l
 # To turn in your work for this assignment
 
 ## Upload your:
-- [ ] lab notebook,
+- [ x ] lab notebook,
 - [ ] Talapas batch script/code, 
 - [ ] FastQC plots, 
 - [ ] counts files generated from htseq-count (in a folder would be nice),
