@@ -1,9 +1,9 @@
-# RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2023)
+# RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2024)
 
-Be sure to upload all relevant materials by the deadline and **double check** to be sure that your off-line repository is up-to-date with your on-line repository. Answers to the questions should be included in your final, high-level, report as a `pdf`. This pdf should be generated using Rmarkdown and submitted to Canvas. Be sure to keep a well-organized, detailed lab notebook!
+Be sure to upload all relevant materials by the deadline and **double check** to be sure that your offline repository is up-to-date with your online repository. Answers to questions should be included in your final, high-level, report as a `pdf`. This pdf should be generated using Rmarkdown and submitted to Canvas as well as GitHub. Be sure to keep a well-organized, detailed lab notebook!
 
 ## Objectives
-The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set in a high-level report. That is, you should create a cohesive, [well written](https://canvas.uoregon.edu/courses/223661/modules/618522) report for your "PI" about what you've learned about/from your data.
+The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set in a high-level report. That is, you should create a cohesive, [well written](https://canvas.uoregon.edu/courses/244873/modules/667769) report for your "PI" about what you've learned about/from your data.
 
 ### Data: 
 Each of you will be working with 2 of the demultiplexed file pairs. For all steps below, process the two libraries separately. Library assignments are here: ```/projects/bgmp/shared/Bi623/QAA_data_assignments.txt```
@@ -35,31 +35,31 @@ ______                    _
 
 # Part 1 – Read quality score distributions
 
-1. Using ```FastQC``` via the command line on Talapas, produce plots of the per-base quality score distributions for R1 and R2 reads. Also, produce plots of the per-base N content, and comment on whether or not they are consistent with the quality score plots.
+1. Using `FastQC` via the command line on Talapas, produce plots of the per-base quality score distributions for R1 and R2 reads. Also, produce plots of the per-base N content, and comment on whether or not they are consistent with the quality score plots.
 
-2. Run your quality score plotting script from your Demultiplexing assignment in Bi622. (Make sure you're using the "running sum" strategy!!) Describe how the ```FastQC``` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? If so, why?
+2. Run your quality score plotting script from your Demultiplexing assignment in Bi622. (Make sure you're using the "running sum" strategy!!) Describe how the `FastQC` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? Mem/CPU usage? If so, why?
 
-3. Comment on the overall data quality of your two libraries. Go beyond per-base qscore distributions. Make and justify a recommendation on whether or these data are of high enough quality to use for further analysis.
+3. Comment on the overall data quality of your two libraries. Go beyond per-base qscore distributions. Make and justify a recommendation on whether these data are of high enough quality to use for further analysis.
 
 # Part 2 – Adaptor trimming comparison
 
-4. Create a new conda environment called ```QAA``` and install ```cutadapt``` and ```Trimmomatic```. Google around if you need a refresher on how to create conda environments. Recommend doing this in an interactive session, not the login node! Record details of how you created this environment in your lab notebook! Make sure you check your installations with:
-    - ```cutadapt --version``` (should be 4.4)
-    -  ```trimmomatic -version``` (should be 0.39)
+4. Create a new conda environment called `QAA` and install `cutadapt` and `Trimmomatic`. Google around if you need a refresher on how to create conda environments. Recommend doing this in an interactive session, not the login node! Record details of how you created this environment in your lab notebook! Make sure you check your installations with:
+    - `cutadapt --version` (should be 4.4)
+    -  `trimmomatic -version` (should be 0.39)
 
-5. Using ```cutadapt```, properly trim adapter sequences from your assigned files. Be sure to read how to use ```cutadapt```. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
+5. Using `cutadapt`, properly trim adapter sequences from your assigned files. Be sure to read how to use `cutadapt`. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
 
     <details>
     <summary>Try to determine what the adapters are on your own. If you cannot (or if you do, and want to confirm), click here to see the actual adapter sequences used.</summary>
   
-    R1: ```AGATCGGAAGAGCACACGTCTGAACTCCAGTCA```
+    R1: `AGATCGGAAGAGCACACGTCTGAACTCCAGTCA`
     
-    R2: ```AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT```
+    R2: `AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT`
     </details>
 
     - *Sanity check*: Use your Unix skills to search for the adapter sequences in your datasets and confirm the expected sequence orientations. Report the commands you used, the reasoning behind them, and how you confirmed the adapter sequences.
 
-6. Use ```Trimmomatic``` to quality trim your reads. Specify the following, **in this order**:
+6. Use `Trimmomatic` to quality trim your reads. Specify the following, **in this order**:
     - LEADING: quality of 3
     - TRAILING: quality of 3
     - SLIDING WINDOW: window size of 5 and required quality of 15
@@ -67,7 +67,7 @@ ______                    _
 
     Be sure to output compressed files and clear out any intermediate files.
 
-7. Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot - yes, you will have to use Python or R to plot this, or Excel if you must. See ICA4 from Bi621). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates and why. 
+7. Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot - yes, you will have to use Python or R to plot this. See ICA4 from Bi621). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates and why. 
 
 # Part 3 – Alignment and strand-specificity
 8. Install sofware (record details in lab notebook!!!). In your QAA environment, use conda to install:
@@ -76,7 +76,7 @@ ______                    _
     - matplotlib
     - htseq
 
-8. Find publicly available mouse genome fasta files (Ensemble release 110) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
+8. Find publicly available mouse genome fasta files (Ensemble release 112) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
 
   > [!IMPORTANT]
   > You will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
@@ -107,7 +107,7 @@ Review the [metadata](./metadata) available to you and see if this information l
 to GitHub.
     
 ## You should create a pdf file (using Rmarkdown) with a high-level report including:
-- [ ] all plots
+- [ ] all requested plots
 - [ ] answers to questions
 - [ ] mapped/unmapped read counts from PS8 script (in a nicely formatted table)
     
