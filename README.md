@@ -46,11 +46,11 @@ ______                    _
 
 # Part 2 – Adaptor trimming comparison
 
-4.  In your QAA environment, install `cutadapt` and `Trimmomatic`. Check your installations with:
+5.  In your QAA environment, install `cutadapt` and `Trimmomatic`. Check your installations with:
     - `cutadapt --version` (should be 4.9)
     - `trimmomatic -version` (should be 0.39)
 
-5. Using `cutadapt`, properly trim adapter sequences from your assigned files. Be sure to read how to use `cutadapt`. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
+6. Using `cutadapt`, properly trim adapter sequences from your assigned files. Be sure to read how to use `cutadapt`. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
 
     <details>
     <summary>Try to determine what the adapters are on your own. If you cannot (or if you do, and want to confirm), click here to see the actual adapter sequences used.</summary>
@@ -62,7 +62,7 @@ ______                    _
 
     - *Sanity check*: Use your Unix skills to search for the adapter sequences in your datasets and confirm the expected sequence orientations. Report the commands you used, the reasoning behind them, and how you confirmed the adapter sequences.
 
-6. Use `Trimmomatic` to quality trim your reads. Specify the following, **in this order**:
+7. Use `Trimmomatic` to quality trim your reads. Specify the following, **in this order**:
     - LEADING: quality of 3
     - TRAILING: quality of 3
     - SLIDING WINDOW: window size of 5 and required quality of 15
@@ -70,27 +70,27 @@ ______                    _
 
     Be sure to output compressed files and clear out any intermediate files.
 
-7. Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot - yes, you will have to use Python or R to plot this. See ICA4 from Bi621). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates and why.
+8. Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot - yes, you will have to use Python or R to plot this. See ICA4 from Bi621). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates and why.
 
-8. CHALLENGE - Run `FastQC` on your trimmed data. Comment on differences you observe between the trimmed and untrimmed data. Include any figures needed to support your conclusions.
+9. CHALLENGE - Run `FastQC` on your trimmed data. Comment on differences you observe between the trimmed and untrimmed data. Include any figures needed to support your conclusions.
 
 # Part 3 – Alignment and strand-specificity
-9. Install sofware (record details in lab notebook!!!). In your QAA environment, use conda to install:
+10. Install sofware (record details in lab notebook!!!). In your QAA environment, use conda to install:
     - star
     - numpy
     - matplotlib
     - htseq
 
-10. Find publicly available mouse genome fasta files (Ensemble release 112) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
+11. Find publicly available mouse genome fasta files (Ensemble release 112) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
 
   > [!IMPORTANT]
   > You will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
     
-11. Using your script from PS8 in Bi621, report the number of mapped and unmapped reads from each of your 2 sam files. Make sure that your script is looking at the bitwise flag to determine if reads are primary or secondary mapping (update/fix your script if necessary).
+12. Using your script from PS8 in Bi621, report the number of mapped and unmapped reads from each of your 2 sam files. Make sure that your script is looking at the bitwise flag to determine if reads are primary or secondary mapping (update/fix your script if necessary).
 
-12. Count reads that map to features using `htseq-count`. You should run htseq-count twice: once with `--stranded=yes` and again with `--stranded=reverse`. Use default parameters otherwise.
+13. Count reads that map to features using `htseq-count`. You should run htseq-count twice: once with `--stranded=yes` and again with `--stranded=reverse`. Use default parameters otherwise.
 
-13. Demonstrate convincingly whether or not the data are from "strand-specific" RNA-Seq libraries. Include any comands/scripts used. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
+14. Demonstrate convincingly whether or not the data are from "strand-specific" RNA-Seq libraries. Include any comands/scripts used. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
 
   > [!NOTE]
   > Recall ICA4 from Bi621.
