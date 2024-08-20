@@ -116,4 +116,8 @@ to GitHub.
 - [ ] answers to questions
 - [ ] mapped/unmapped read counts from PS8 script (in a nicely formatted table)
     
-The three parts of the assignment should be clearly labeled. Be sure to title and write a descriptive figure caption for each image/graph/table you present (*Hint* - think about figure captions you've read and discussed in Journal Club). The file should be named `QAA_report.pdf`, and it should be a the top level of your repo AND submitted to Canvas.
+The three parts of the assignment should be clearly labeled. Be sure to title and write a descriptive figure caption for each image/graph/table you present. 
+> [!TIP]
+> Think about figure captions you've read and discussed in Journal Club. Find some good examples to model your captions on.
+
+The file should be named `QAA_report.pdf`, and it should be a the top level of your repo AND submitted to Canvas.
