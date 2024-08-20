@@ -92,7 +92,7 @@ ______                    _
 
 14. Demonstrate convincingly whether or not the data are from "strand-specific" RNA-Seq libraries. Include any comands/scripts used. Briefly describe your evidence, using quantitative statements (e.g. "I propose that these data are/are not strand-specific, because X% of the reads are y, as opposed to z.").
 
-  > [!NOTE]
+  > [!TIP]
   > Recall ICA4 from Bi621.
 
 # Challenge (optional!)
