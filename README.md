@@ -1,37 +1,14 @@
-# RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2024)
+# RNA-seq Quality Assessment Assignment - Bi 623 (Summer 2025)
 
 Be sure to upload all relevant materials by the deadline and **double check** to be sure that your offline repository is up-to-date with your online repository. Answers to questions should be included in your final, high-level, report as a `pdf`. This pdf should be generated using Rmarkdown and submitted to Canvas as well as GitHub. Be sure to keep a well-organized, detailed lab notebook!
 
 ## Objectives
-The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set in a high-level report. That is, you should create a cohesive, [well written](https://canvas.uoregon.edu/courses/244873/modules/667769) report for your "PI" about what you've learned about/from your data.
+The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set in a high-level report. That is, you should create a cohesive, [well written](FIXLINK) report for your "PI" about what you've learned about/from your data.
 
 ### Data: 
-Each of you will be working with 2 of the demultiplexed file pairs. For all steps below, process the two libraries separately. Library assignments are here: ```/projects/bgmp/shared/Bi623/QAA_data_assignments.txt```
+Each of you will be working with 2 RNA-seq files from two different electric fish studies (PRJNA1005245 and PRJNA1005244). For all steps below, process the two libraries separately. SRR assignments are here: ```/projects/bgmp/shared/Bi623/UPDATEME.txt```
 
-The demultiplexed, gzipped `.fastq` files are here: ```/projects/bgmp/shared/2017_sequencing/demultiplexed/```
-
-> [!WARNING]
-> Do not move, copy, or unzip these data!
-```
-______                    _                                                               
-|  _  \                  | |                                                              
-| | | |___    _ __   ___ | |_   _ __ ___   _____   _____      ___ ___  _ __  _   _        
-| | | / _ \  | '_ \ / _ \| __| | '_ ` _ \ / _ \ \ / / _ \    / __/ _ \| '_ \| | | |       
-| |/ / (_) | | | | | (_) | |_  | | | | | | (_) \ V /  __/_  | (_| (_) | |_) | |_| |_      
-|___/ \___/  |_| |_|\___/ \__| |_| |_| |_|\___/ \_/ \___( )  \___\___/| .__/ \__, ( )     
-                                                        |/            | |     __/ |/      
-                                                                      |_|    |___/        
-                              _         _   _                          _       _        _ 
-                             (_)       | | | |                        | |     | |      | |
-  ___  _ __   _   _ _ __  _____ _ __   | |_| |__   ___  ___  ___    __| | __ _| |_ __ _| |
- / _ \| '__| | | | | '_ \|_  / | '_ \  | __| '_ \ / _ \/ __|/ _ \  / _` |/ _` | __/ _` | |
-| (_) | |    | |_| | | | |/ /| | |_) | | |_| | | |  __/\__ \  __/ | (_| | (_| | || (_| |_|
- \___/|_|     \__,_|_| |_/___|_| .__/   \__|_| |_|\___||___/\___|  \__,_|\__,_|\__\__,_(_)
-                               | |                                                        
-                               |_|                                                        
-```
-> [!WARNING]
-> Do not move, copy, or unzip these data!
+You are responsible for downloading this data from the SRA, dumping into fastq files, and zipping those files. We are processing this data for use in a future assignment, so please keep your files well organized.
 
 # Part 1 – Read quality score distributions
 
@@ -42,12 +19,12 @@ ______                    _
 
 3. Run your quality score plotting script from your Demultiplexing assignment in Bi622. (Make sure you're using the "running sum" strategy!!) Describe how the `FastQC` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? Mem/CPU usage? If so, why?
 
-4. Comment on the overall data quality of your two libraries. Go beyond per-base qscore distributions. Make and justify a recommendation on whether these data are of high enough quality to use for further analysis.
+4. Comment on the overall data quality of your two libraries. Go beyond per-base qscore distributions. Examine the `FastQC` [documentation][https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/] for guidance on interpreting results and planning next steps. Make and justify a recommendation on whether these data are of high enough quality to use for further analysis. 
 
 # Part 2 – Adaptor trimming comparison
 
 5.  In your QAA environment, install `cutadapt` and `Trimmomatic`. Check your installations with:
-    - `cutadapt --version` (should be 4.9)
+    - `cutadapt --version` (should be 5.0)
     - `trimmomatic -version` (should be 0.39)
 
 6. Using `cutadapt`, properly trim adapter sequences from your assigned files. Be sure to read how to use `cutadapt`. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
@@ -81,7 +58,7 @@ ______                    _
     - matplotlib
     - htseq
 
-11. Find publicly available mouse genome fasta files (Ensemble release 112) and generate an alignment database from them. Align the reads to your mouse genomic database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
+11. Download the publicly available Campylomormyrus compressirostris genome fasta file (GCA_910591475.1) and generate an alignment database from it. Align the reads to your mouse C. compressirostris database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
 
   > [!IMPORTANT]
   > You will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
