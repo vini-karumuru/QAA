@@ -6,9 +6,9 @@ Be sure to upload all relevant materials by the deadline and **double check** to
 The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set in a high-level report. That is, you should create a cohesive, [well written](FIXLINK) report for your "PI" about what you've learned about/from your data.
 
 ### Data: 
-Each of you will be working with 2 RNA-seq files from two different electric fish studies (PRJNA1005245 and PRJNA1005244). For all steps below, process the two libraries separately. SRR assignments are here: ```/projects/bgmp/shared/Bi623/UPDATEME.txt```
+Each of you will be working with 2 RNA-seq files from two different electric fish studies (PRJNA1005245 and PRJNA1005244). The methods for the PRJNA1005244 dataset are [published](https://doi.org/10.1093/molbev/msae021) and the methods for the PRJNA1005245 dataset are written in a [thesis](). For all steps below, process the two libraries separately. SRR assignments are here: ```/projects/bgmp/shared/Bi623/UPDATEME.txt```
 
-You are responsible for downloading this data from the SRA, dumping into fastq files, and zipping those files. We are processing this data for use in a future assignment, so please keep your files well organized.
+You are responsible for downloading this data from NCBI SRA, dumping into fastq files, and zipping those files. We are processing this data for use in a future assignment, so please keep your files well organized. Finally, rename the files to reflect Species_individual_organ_age_readnumber.fastq.gz.
 
 # Part 1 – Read quality score distributions
 
@@ -19,7 +19,7 @@ You are responsible for downloading this data from the SRA, dumping into fastq f
 
 3. Run your quality score plotting script from your Demultiplexing assignment in Bi622. (Make sure you're using the "running sum" strategy!!) Describe how the `FastQC` quality score distribution plots compare to your own. If different, propose an explanation. Also, does the runtime differ? Mem/CPU usage? If so, why?
 
-4. Comment on the overall data quality of your two libraries. Go beyond per-base qscore distributions. Examine the `FastQC` [documentation][https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/] for guidance on interpreting results and planning next steps. Make and justify a recommendation on whether these data are of high enough quality to use for further analysis. 
+4. Comment on the overall data quality of your two libraries. Go beyond per-base qscore distributions. Examine the `FastQC` [documentation](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/3%20Analysis%20Modules/) for guidance on interpreting results and planning next steps. Make and justify a recommendation on whether these data are of high enough quality to use for further analysis. 
 
 # Part 2 – Adaptor trimming comparison
 
