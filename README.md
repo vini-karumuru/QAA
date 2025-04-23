@@ -74,7 +74,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
 
 # Challenge (optional!)
 
-Review the [publication](https://doi.org/10.1093/molbev/msae021) for one of the BioProjects and see if this information leads to any additional insight of your analysis.
+Review the [publication](https://doi.org/10.1093/molbev/msae021) from PRJNA1005244 and see if this information leads to any additional insight of your analysis.
 
 # To turn in your work for this assignment
 
