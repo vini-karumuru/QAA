@@ -47,7 +47,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
 
     Be sure to output compressed files and clear out any intermediate files.
 
-8. Plot the trimmed read length distributions for both R1 and R2 reads (on the same plot - yes, you will have to use Python or R to plot this. See ICA4 from Bi621). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates and why.
+8. Plot the trimmed read length distributions for both paired R1 and paired R2 reads (on the same plot - yes, you will have to use Python or R to plot this. See ICA4 from Bi621). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates and why.
 
 9. CHALLENGE - Run `FastQC` on your trimmed data. Comment on differences you observe between the trimmed and untrimmed data. Include any figures needed to support your conclusions.
 
@@ -74,7 +74,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
 
 # Challenge (optional!)
 
-Review the [metadata](./metadata) available to you and see if this information leads to any additional insight of your analysis.
+Review the [publication](https://doi.org/10.1093/molbev/msae021) for one of the BioProjects and see if this information leads to any additional insight of your analysis.
 
 # To turn in your work for this assignment
 
