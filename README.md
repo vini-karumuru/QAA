@@ -6,7 +6,7 @@ Be sure to upload all relevant materials by the deadline and **double check** to
 The objectives of this assignment are to use existing tools for quality assessment and adaptor trimming, compare the quality assessments to those from your own software, and to demonstrate your ability to summarize other important information about this RNA-Seq data set in a high-level report. That is, you should create a cohesive, [well written](FIXLINK) report for your "PI" about what you've learned about/from your data.
 
 ### Data: 
-Each of you will be working with 2 RNA-seq files from two different electric fish studies (PRJNA1005245 and PRJNA1005244). The methods for the PRJNA1005244 dataset are [published](https://doi.org/10.1093/molbev/msae021) and the methods for the PRJNA1005245 dataset are written in a [thesis](). For all steps below, process the two libraries separately. SRR assignments are here: ```/projects/bgmp/shared/Bi623/UPDATEME.txt```
+Each of you will be working with 2 RNA-seq files from two different electric fish studies (PRJNA1005245 and PRJNA1005244). The methods for the PRJNA1005244 dataset are [published](https://doi.org/10.1093/molbev/msae021) and the methods for the PRJNA1005245 dataset are written in a [thesis](https://publishup.uni-potsdam.de/files/63017/cheng_diss.pdf). For all steps below, process the two libraries separately. SRR assignments are here: ```/projects/bgmp/shared/Bi623/UPDATEME.txt```
 
 You are responsible for downloading this data from NCBI SRA, dumping into fastq files, and zipping those files. We are processing this data for use in a future assignment, so please keep your files well organized. Finally, rename the files to reflect Species_individual_organ_age_readnumber.fastq.gz.
 
@@ -58,10 +58,10 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
     - matplotlib
     - htseq
 
-11. Download the publicly available Campylomormyrus compressirostris genome fasta file from [Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.c59zw3rcj) and generate an alignment database from it. Align the reads to your C. compressirostris database using a splice-aware aligner. Use the settings specified in PS8 from Bi621.
+11. Download the publicly available Campylomormyrus compressirostris genome fasta and gff file from [Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.c59zw3rcj) and generate an alignment database from it. If the download fails, the files are available 'GIVE FILE PATH HERE'. Align the reads to your C. compressirostris database using a splice-aware aligner. Use the settings specified in PS8 from Bi621. 
 
   > [!IMPORTANT]
-  > You will need to use gene models to perform splice-aware alignment, see PS8 from Bi621.
+  > You will need to use gene models to perform splice-aware alignment, see PS8 from Bi621. You may need to convert the gff file into a gtf file for this to work successfully.
     
 12. Using your script from PS8 in Bi621, report the number of mapped and unmapped reads from each of your 2 sam files. Make sure that your script is looking at the bitwise flag to determine if reads are primary or secondary mapping (update/fix your script if necessary).
 
