@@ -83,7 +83,7 @@ Review the [publication](https://doi.org/10.1093/molbev/msae021) from PRJNA10052
 - [ ] Talapas batch script/code, 
 - [ ] FastQC plots, 
 - [ ] counts files generated from htseq-count (in a folder would be nice),
-- [ ] pdf report (see below; turn in to Github AND Canvas), 
+- [ ] pdf report (see below; turn into both Github AND Canvas), 
 - [ ] and any additional plots, code, or code output
 
 to GitHub.
