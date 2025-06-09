@@ -72,7 +72,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
   > [!TIP]
   > Recall ICA4 from Bi621.
 
-# Challenge (optional!)
+# Bonus (optional!)
 
 Review the [publication](https://doi.org/10.1093/molbev/msae021) from PRJNA1005244 and see if this information leads to any additional insight of your analysis.
 
