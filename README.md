@@ -58,7 +58,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
     - matplotlib
     - htseq
 
-11. Download the publicly available Campylomormyrus compressirostris genome fasta and gff file from [Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.c59zw3rcj) and generate an alignment database from it. If the download fails, the files are available on Talapas '/projects/bgmp/shared/Bi623/PS2/campylomormyrus.fasta, /projects/bgmp/shared/Bi623/PS2/campylomormyrus.gff'. Align the reads to your C. compressirostris database using a splice-aware aligner. Use the settings specified in PS8 from Bi621. 
+11. Download the publicly available *Campylomormyrus compressirostris* genome fasta and gff file from [Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.c59zw3rcj) and generate an alignment database from it. If the download fails, the files are available on Talapas '/projects/bgmp/shared/Bi623/PS2/campylomormyrus.fasta, /projects/bgmp/shared/Bi623/PS2/campylomormyrus.gff'. Align the reads to your *C. compressirostris* database using a splice-aware aligner. Use the settings specified in PS8 from Bi621. 
 
   > [!IMPORTANT]
   > You will need to use gene models to perform splice-aware alignment, see PS8 from Bi621. You may need to convert the gff file into a gtf file for this to work successfully.
