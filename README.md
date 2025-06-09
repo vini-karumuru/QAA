@@ -49,7 +49,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
 
 8. Plot the trimmed read length distributions for both paired R1 and paired R2 reads (on the same plot - yes, you will have to use Python or R to plot this. See ICA4 from Bi621). You can produce 2 different plots for your 2 different RNA-seq samples. There are a number of ways you could possibly do this. One useful thing your plot should show, for example, is whether R1s are trimmed more extensively than R2s, or vice versa. Comment on whether you expect R1s and R2s to be adapter-trimmed at different rates and why.
 
-9. CHALLENGE - Run `FastQC` on your trimmed data. Comment on differences you observe between the trimmed and untrimmed data. Include any figures needed to support your conclusions.
+9. BONUS - Run `FastQC` on your trimmed data. Comment on differences you observe between the trimmed and untrimmed data. Include any figures needed to support your conclusions.
 
 # Part 3 – Alignment and strand-specificity
 10. Install sofware (record details in lab notebook!!!). In your QAA environment, use conda to install:
@@ -83,18 +83,25 @@ Review the [publication](https://doi.org/10.1093/molbev/msae021) from PRJNA10052
 - [ ] Talapas batch script/code, 
 - [ ] FastQC plots, 
 - [ ] counts files generated from htseq-count (in a folder would be nice),
-- [ ] pdf report (see below), 
+- [ ] pdf report (see below; turn in to Github AND Canvas), 
 - [ ] and any additional plots, code, or code output
 
 to GitHub.
     
-## You should create a pdf file (using Rmarkdown) with a high-level report including:
+### Pdf report details
+You should create a pdf file (using Rmarkdown) with a high-level report including:
 - [ ] all requested plots
 - [ ] answers to questions
 - [ ] mapped/unmapped read counts from PS8 script (in a nicely formatted table)
-    
+- [ ] It should be named `QAA_report.pdf`
+- [ ] Include at the top level of your repo
+- [ ] ALSO, submit it to Canvas.
+
+> [!TIP]
+> You may need to install LaTeX to knit your rmarkdown into a pdf file. Run `tinytex::install_tinytex()` to install it on R.
+   
 The three parts of the assignment should be clearly labeled. Be sure to title and write a descriptive figure caption for each image/graph/table you present. 
 > [!TIP]
 > Think about figure captions you've read and discussed in Journal Club. Find some good examples to model your captions on.
 
-The file should be named `QAA_report.pdf`, and it should be a the top level of your repo AND submitted to Canvas.
+
