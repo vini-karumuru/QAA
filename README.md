@@ -6,7 +6,7 @@ In this assignment, you will process electric organ and/or skeletal muscle RNA-s
 Be sure to upload all relevant materials by the deadline and **double check** to be sure that your offline repository is up-to-date with your online repository. Answers to questions should be included in your final, high-level, report as a `pdf`. This pdf should be generated using Rmarkdown and submitted to Canvas as well as GitHub. Be sure to keep a well-organized, detailed lab notebook!
 
 ### Dataset: 
-Each of you will be working with 2 RNA-seq files from two different electric fish studies (PRJNA1005245 and PRJNA1005244). The methods for the PRJNA1005244 dataset are [published](https://doi.org/10.1093/molbev/msae021) and the methods for the PRJNA1005245 dataset are written in the third chapter of a [thesis](https://canvas.uoregon.edu/courses/266187/files/22059308?module_item_id=5380118). For all steps below, process the two libraries separately. SRR assignments are here: ```/projects/bgmp/shared/Bi623/PS2/QAA_data_Assignments.txt```. If you have time, consider claiming additional RNA-seq datasets from these BioProjects via this (google doc)[https://docs.google.com/document/d/1vEmVEzUaTjbDF4JyNsWH-wFpi8dm4wkcvWgSoYZzoCY/edit?usp=sharing]. Although this is not extra credit, it will make our downstream RNA-seq analysis more interesting and your classmates will appreciate your efforts.
+Each of you will be working with 2 RNA-seq files from two different electric fish studies (PRJNA1005245 and PRJNA1005244). The methods for the PRJNA1005244 dataset are [published](https://doi.org/10.1093/molbev/msae021) and the methods for the PRJNA1005245 dataset are written in the third chapter of a [thesis](https://canvas.uoregon.edu/courses/266187/files/22059308?module_item_id=5380118). For all steps below, process the two libraries separately. SRR assignments are here: ```/projects/bgmp/shared/Bi623/PS2/QAA_data_Assignments.txt```. If you have time, consider claiming additional RNA-seq datasets from these BioProjects via this [google doc](https://docs.google.com/document/d/1vEmVEzUaTjbDF4JyNsWH-wFpi8dm4wkcvWgSoYZzoCY/edit?usp=sharing). Although this is not extra credit, it will make our downstream RNA-seq analysis more interesting and your classmates will appreciate your efforts.
 
 You are responsible for downloading this data from NCBI SRA, dumping into fastq files, and zipping those files. We are processing this data for use in a future assignment, so please keep your files well organized. Finally, rename the files to reflect Species_individual_organ_age_readnumber.fastq.gz.
 
@@ -79,11 +79,11 @@ Review the [publication](https://doi.org/10.1093/molbev/msae021) from PRJNA10052
 # To turn in your work for this assignment
 
 ## Upload your:
-- [ ] lab notebook,
-- [ ] Talapas batch script/code, 
-- [ ] FastQC plots, 
-- [ ] counts files generated from htseq-count (in a folder would be nice),
-- [ ] pdf report (see below; turn into both Github AND Canvas), 
+- [ ] lab notebook
+- [ ] Talapas batch script/code 
+- [ ] FastQC plots 
+- [ ] counts files generated from htseq-count (in a folder would be nice)
+- [ ] pdf report (see below; turn into both Github AND Canvas) 
 - [ ] and any additional plots, code, or code output
 
 to GitHub.
