@@ -53,10 +53,10 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
 
 # Part 3 – Alignment and strand-specificity
 10. Install sofware (record details in lab notebook!!!). In your QAA environment, use conda to install:
-    - star
-    - numpy
-    - matplotlib
-    - htseq
+    - STAR
+    - NumPy
+    - Matplotlib
+    - HTSeq
 
 11. Download the publicly available *Campylomormyrus compressirostris* genome fasta and gff file from [Dryad](https://datadryad.org/dataset/doi:10.5061/dryad.c59zw3rcj) and generate an alignment database from it. If the download fails, the files are available on Talapas '/projects/bgmp/shared/Bi623/PS2/campylomormyrus.fasta, /projects/bgmp/shared/Bi623/PS2/campylomormyrus.gff'. Align the reads to your *C. compressirostris* database using a splice-aware aligner. Use the settings specified in PS8 from Bi621. 
 
