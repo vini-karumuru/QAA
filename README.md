@@ -23,11 +23,11 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
 
 # Part 2 – Adaptor trimming comparison
 
-5.  In your QAA environment, install `cutadapt` and `Trimmomatic`. Check your installations with:
+5.  In your QAA environment, install `Cutadapt` and `Trimmomatic`. Check your installations with:
     - `cutadapt --version` (should be 5.0)
     - `trimmomatic -version` (should be 0.39)
 
-6. Using `cutadapt`, properly trim adapter sequences from your assigned files. Be sure to read how to use `cutadapt`. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
+6. Using `Cutadapt`, properly trim adapter sequences from your assigned files. Be sure to read how to use `Cutadapt`. Use default settings. What proportion of reads (both R1 and R2) were trimmed?
 
     <details>
     <summary>Try to determine what the adapters are on your own. If you cannot (or if you do, and want to confirm), click here to see the actual adapter sequences used.</summary>
