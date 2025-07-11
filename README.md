@@ -71,6 +71,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into fastq 
 
   > [!TIP]
   > Recall ICA4 from Bi621.
+15. BONUS - Turn your commands from part 1 and 2 into a script with a loop going through your two SRA files
 
 # Bonus (optional!)
 
