@@ -45,6 +45,7 @@ You are responsible for downloading this data from NCBI SRA, dumping into FASTQ 
     - *Sanity check*: Use your Unix skills to search for the adapter sequences in your datasets and confirm the expected sequence orientations. Report the commands you used, the reasoning behind them, and how you confirmed the adapter sequences.
     
 7. Use `Trimmomatic` to quality trim your reads. Specify the following, **in this order**:
+    - HEADCROP: 8 bases 
     - LEADING: quality of 3
     - TRAILING: quality of 3
     - SLIDING WINDOW: window size of 5 and required quality of 15
