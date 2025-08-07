@@ -93,7 +93,7 @@ Review the [publication](https://doi.org/10.1093/molbev/msae021) from PRJNA10052
 - [ ] lab notebook
 - [ ] Talapas batch script/code
 - [ ] FastQC plots
-- [ ] counts files generated from htseq-count (in a folder would be nice; **only include the counts files that would be used in a future differential RNA-seq analysis**)
+- [ ] counts files generated from htseq-count (in a folder would be nice; **only include the counts files that would be used in a future differential RNA-seq analysis and follow the naming conventions from the RNAseq meta data file: YourSubmittedHTSeqCountsFileName column**)
 - [ ] pdf report (see below; turn into both Github AND Canvas)
 - [ ] and any additional plots, code, or code output
 
